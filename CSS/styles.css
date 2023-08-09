@@ -66,6 +66,21 @@ body {
 
 /*Encabezado Estudio y Portafolio*/
 
+.header-container {
+  display: flex;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.header-border {
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+}
+
 .logo {
   font-family: 'Raleway';
   color: var(--color-para-resaltar);
@@ -75,18 +90,12 @@ body {
   text-decoration: none;
 }
 
-.header-container {
-  border-bottom: 1px solid #ececec;
-}
-
 .link-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 293px;
   padding: 32px 0px;
-  margin-left: 93px;
-  margin-right: 306px;
 }
 
 .link-container2 {
@@ -124,14 +133,14 @@ body {
 }
 
 .header-icons {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .header-icons {
   cursor: pointer;
 }
 
-.header-icons:hover path {
+.header-icons:hover {
   fill: var(--color-para-resaltar);
 }
 
@@ -151,8 +160,13 @@ body {
 }
 
 .main-information-background {
-  background-image: url('/images/fondo-informacion-principal.jpg');
-  background-repeat: repeat;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.3),
+      rgba(47, 48, 58, 0.6)
+    ),
+    url('../images/fondo-informacion-principal.jpg');
+  background-repeat: repeat, repeat;
+  background-size: 1600px, 1600px;
 }
 
 .main-information {
@@ -242,7 +256,7 @@ body {
 }
 
 .image-serv-text1 {
-  background-image: url('/images/1escribiendoenportatil.jpg');
+  background-image: url('../images/1escribiendoenportatil.jpg');
   background-size: cover;
   width: 370px;
   height: 294px;
@@ -275,7 +289,7 @@ body {
 
 .section3-container {
   display: flex;
-  width: 1600px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
@@ -337,7 +351,7 @@ body {
   align-items: center;
 }
 
-.icon:hover path {
+.icon:hover {
   fill: var(--color-blanco-texto);
 }
 
@@ -387,7 +401,7 @@ body {
   border: 1px solid #2196f3;
 }
 
-.customers > svg:hover path {
+.customers > svg:hover {
   fill: var(--color-para-resaltar);
 }
 
@@ -402,6 +416,7 @@ body {
   margin-right: auto;
   justify-content: center;
   align-items: center;
+  align-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
 }
@@ -413,6 +428,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
+  letter-spacing: 0.48px;
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
@@ -497,7 +513,7 @@ body {
 
 .footer-container {
   display: flex;
-  width: 1600px;
+  width: 100%;
   height: 252px;
   margin-left: auto;
   margin-right: auto;
