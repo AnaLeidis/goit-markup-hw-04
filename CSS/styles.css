@@ -133,10 +133,8 @@ body {
 }
 
 .header-icons {
-  margin-right: 5px;
-}
-
-.header-icons {
+  fill: #757575;
+  margin-right: 10px;
   cursor: pointer;
 }
 
@@ -351,7 +349,7 @@ body {
   align-items: center;
 }
 
-.icon:hover {
+.icon > svg:hover {
   fill: var(--color-blanco-texto);
 }
 
@@ -419,6 +417,8 @@ body {
   align-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
+  width: 611px;
+  height: 54px;
 }
 
 .button-secondary {
