@@ -132,14 +132,24 @@ body {
   color: var(--color-para-resaltar);
 }
 
-.header-icons {
-  fill: #757575;
+.header-icons1 {
+  fill: var(--color-secundario-texto);
   margin-right: 10px;
   cursor: pointer;
 }
 
-.header-icons:hover {
-  fill: var(--color-para-resaltar);
+.header-contact-information-email:hover .header-icons1 {
+  fill: #2196f3;
+}
+
+.header-icons2 {
+  fill: var(--color-secundario-texto);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header-contact-information-tel:hover .header-icons2 {
+  fill: #2196f3;
 }
 
 /*Contenido: Estudio*/
@@ -338,7 +348,11 @@ body {
   cursor: pointer;
 }
 
-.icon {
+.wt-icon-color {
+  fill: #afb1b8;
+}
+
+.wt-icon {
   background-color: var(--color-blanco-texto);
   border-radius: 50%;
   width: 44px;
@@ -349,11 +363,7 @@ body {
   align-items: center;
 }
 
-.icon > svg:hover {
-  fill: var(--color-blanco-texto);
-}
-
-.icon:hover {
+.wt-icon:hover {
   background-color: #2196f3;
   border-radius: 50%;
   width: 44px;
@@ -362,6 +372,12 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+  transition: all 0.5s;
+}
+
+.wt-icon:hover .wt-icon-color {
+  fill: var(--color-blanco-texto);
+  transition: all 0.5s;
 }
 
 .section4-container {
@@ -383,6 +399,10 @@ body {
   width: 1200px;
 }
 
+.cust-icons-color {
+  fill: #afb1b8;
+}
+
 .customers {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -397,10 +417,12 @@ body {
 
 .customers:hover {
   border: 1px solid #2196f3;
+  transition: all 0.5s;
 }
 
-.customers > svg:hover {
+.customers:hover .cust-icons-color {
   fill: var(--color-para-resaltar);
+  transition: all 0.5s;
 }
 
 /*Contenido: Portafolio*/
@@ -417,8 +439,6 @@ body {
   align-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
-  width: 611px;
-  height: 54px;
 }
 
 .button-secondary {
@@ -432,6 +452,27 @@ body {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
+  padding: 0%;
+}
+
+.but-sec1 {
+  padding: 6px 18px 6px 17px;
+}
+
+.but-sec2 {
+  padding: 6px 24px;
+}
+
+.but-sec3 {
+  padding: 6px 24px 6px 23px;
+}
+
+.but-sec4 {
+  padding: 6px 26px 6px 25px;
+}
+
+.but-sec5 {
+  padding: 6px 26px 6px 27px;
 }
 
 .button-secondary:not(:last-child) {
@@ -596,6 +637,10 @@ body {
   background: #2f303a;
 }
 
+.soc-net-icons-color {
+  fill: var(--color-blanco-texto);
+}
+
 .social-networks-icons-background {
   width: 44px;
   height: 44px;
@@ -610,4 +655,5 @@ body {
 
 .social-networks-icons-background:hover {
   background-color: var(--color-para-resaltar);
+  transition: all 0.5s;
 }
